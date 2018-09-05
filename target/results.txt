@@ -1,0 +1,29 @@
+neighbourhood
+accuracy = 51.4709184819%
+precision = 31.8482841662%
+recall = 71.2777902538%
+
+ngram
+accuracy = 55.4682236694%
+precision = 16.2991241859%
+recall = 81.4956209297%
+
+ged
+accuracy = 54.8843476308%
+precision = 26.0432080497%
+recall = 79.0478329216%
+
+led
+accuracy = 31.2598248372%
+precision = 2.26878082583%
+recall = 62.4971929037%
+
+dl
+accuracy = 59.9595778127%
+precision = 33.4151687856%
+recall = 85.5827532001%
+
+ngram birkbeck
+accuracy = 19.1678920509%
+precision = 7.4318830551%
+recall = 37.1594152755%

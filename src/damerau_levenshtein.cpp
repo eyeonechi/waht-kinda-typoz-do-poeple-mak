@@ -668,7 +668,7 @@ int main(int argc, char **argv) {
   }
 
   // processing
-  calculate_neighbourhood_search(dict, correct, misspell, 1);
+  calculate_damerau_levenshtein_distance(dict, correct, misspell);
 
   // End time
   tock = clock();

@@ -668,7 +668,7 @@ int main(int argc, char **argv) {
   }
 
   // processing
-  calculate_neighbourhood_search(dict, correct, misspell, 1);
+  calculate_n_gram(dict, correct, misspell, 2);
 
   // End time
   tock = clock();

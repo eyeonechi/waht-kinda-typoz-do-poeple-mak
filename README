@@ -1,0 +1,40 @@
+Waht-kinda-typoz-do-poeple-mak?
+COMP90049 Knowledge Technologies
+2018 Semester 2
+
+Ivan Ken Weng Chee
+736901
+
+Readme
+Dataset files are located in /data
+Source files are located in /src
+Output files are located in /target
+
+Compiling
+g++ -o damerau_levenshtein damerau_levenshtein.cpp
+g++ -o global_levenshtein global_levenshtein.cpp
+g++ -o local_levenshtein local_levenshtein.cpp
+g++ -o n_gram_distance n_gram_distance.cpp
+g++ -o neighbourhood_search neighbourhood_search.cpp
+
+Running on wiki
+./damerau_levenshtein data/dict.txt data/wiki_correct.txt data/wiki_misspell.txt
+./global_levenshtein data/dict.txt data/wiki_correct.txt data/wiki_misspell.txt
+./local_levenshtein data/dict.txt data/wiki_correct.txt data/wiki_misspell.txt
+./n_gram_distance data/dict.txt data/wiki_correct.txt data/wiki_misspell.txt
+./neighbourhood_search data/dict.txt data/wiki_correct.txt data/wiki_misspell.txt
+
+Running on birkbeck
+./damerau_levenshtein data/dict.txt data/birkbeck_correct.txt data/birkbeck_misspell.txt
+./global_levenshtein data/dict.txt data/birkbeck_correct.txt data/birkbeck_misspell.txt
+./local_levenshtein data/dict.txt data/birkbeck_correct.txt data/birkbeck_misspell.txt
+./n_gram_distance data/dict.txt data/birkbeck_correct.txt data/birkbeck_misspell.txt
+./neighbourhood_search data/dict.txt data/birkbeck_correct.txt data/birkbeck_misspell.txt
+
+Saving output
+Run program and pipe output to file
+... > output.txt
+
+Calculating scores
+Run calculate_result.py on output files
+calculate_result.py ngram_wiki.txt
